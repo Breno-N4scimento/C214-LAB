@@ -44,7 +44,7 @@ convertVar = LabelEncoder()
 
 classificador = ClassificadorKNN(modeloKNN, convertVar)
 
-data = classificador.carregar_dados(r"C:\Users\elbri\OneDrive\Área de Trabalho\psicoFETIN\dataset.csv")
+data = classificador.carregar_dados(r"dataset.csv")
 
 xTreino, xTeste, yTreino, yTeste = classificador.preparar_dados(data)
 
